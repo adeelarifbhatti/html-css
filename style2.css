@@ -1,0 +1,42 @@
+
+body {
+    font-family:Arial, Helvetica;
+}
+.container{
+    background-color: rgb(216, 159, 159);
+}
+.panel{
+    background-color: rgb(44, 41, 43);
+}
+.second-panel{
+    background-color: rgb(131, 118, 118);
+
+}
+.third-panel{
+    background-color: blueviolet;
+}
+h1,h2 {
+color: blue;
+}
+h1{
+
+    font-size: 35px;
+}
+h2{
+    font-size: 22px;
+}
+p{
+    text-align: justify;
+    font-size: medium;
+}
+a {
+
+    font-size: smaller;
+}
+
+.top-text{
+    color: red
+}
+.bottom-text{
+    color: greenyellow
+}

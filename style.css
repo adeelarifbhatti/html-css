@@ -33,6 +33,10 @@ a {
 
     font-size: smaller;
 }
+.pic1 {
+        margin-left: 40px;
+        margin-right: 40px;
+}
 .top-text{
     color: red
 }
