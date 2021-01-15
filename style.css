@@ -1,0 +1,19 @@
+body {
+    font-family:Arial, Helvetica;
+}
+h1,h2 {
+color: blue;
+}
+h1{
+    font-size: 35px;
+}
+h2{
+    font-size: 22px;
+}
+p{
+    text-align: justify;
+    font-size: medium;
+}
+a {
+    font-size: smaller;
+}
