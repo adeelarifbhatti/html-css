@@ -1,19 +1,62 @@
 
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family:Arial, Helvetica;
 }
 .container{
-    background-color: rgb(216, 159, 159);
+    width: 1540px;
+    background-color: rgb(240, 222, 222);
+   /*margin: top right bottom left; */
+   margin: 20px auto 0 auto; 
 }
 .panel{
-    background-color: rgb(44, 41, 43);
+/* background-color: rgb(131, 121, 127);*/
+    width: 75%;
+    float: left;
 }
+.panel img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    
+}
+ /*.panel img {
+height: 50px;
+width: 50px;
+border-radius: 50%;
+}*/
 .second-panel{
     background-color: rgb(131, 118, 118);
-
+    width: 25%;  
+    float: left;
+}
+.child-second-panel{
+    padding-top: 10px;
+}
+.child-second-panel-links{
+    padding-top: 10px;
 }
 .third-panel{
-    background-color: blueviolet;
+     background-color: blueviolet;
+   padding-top: 10px;
+    width: 25%;
+    float: left;
+    
+}
+.fourth-panel{
+  /*  background-color: rgb(215, 64, 235);*/
+}
+.fifth-panel{
+    padding-top: 5px;
+    border-top: 3px solid red;
+   /*background-color: aqua;*/
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
 }
 h1,h2 {
 color: blue;
@@ -35,8 +78,12 @@ a {
 }
 
 .top-text{
-    color: red
+   /* color: red; */
 }
 .bottom-text{
-    color: greenyellow
+    color: greenyellow;
+    width: 75%;
+}
+.child-panel {
+    float: left;
 }
