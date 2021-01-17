@@ -10,3 +10,24 @@ html{
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
+.row{
+    width: 1140px;
+    margin: 0 auto;
+
+}
+
+header {
+    background-image: linear-gradient(rgba(53, 51, 51, 0.397), rgba(53, 51, 51, 0.397)), url(img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+h1 {
+    margin: 0;
+}
+.div-one {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 30%;
+}
