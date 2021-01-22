@@ -15,9 +15,10 @@ body {
 }
 .panel{
 /* background-color: rgb(131, 121, 127);*/
-    width: 75%;
+    width: 50%;
     float: left;
     position: relative;
+    margin-bottom: 60px;
 }
 .panel img {
     height: 50px;
@@ -31,26 +32,31 @@ width: 50px;
 border-radius: 50%;
 }*/
 .second-panel{
-    background-color: rgb(131, 118, 118);
+    background-color: rgb(238, 134, 134);
     width: 25%;  
     float: left;
+    margin-bottom: 300px;
+    
   
 }
 .child-second-panel{
     padding-top: 10px;
     margin-left: 20px;
+    margin-bottom: 60px;
 }
 .child-second-panel-links{
     padding-top: 10px;
 }
 .third-panel{
-     background-color: blueviolet;
+     background-color: rgb(201, 178, 223);
    padding-top: 20px;
     width: 25%;
     float: left;
     
 }
 .fourth-panel{
+    width: 50%;
+    position: relative;
   /*  background-color: rgb(215, 64, 235);*/
 }
 .fifth-panel{
@@ -61,6 +67,8 @@ border-radius: 50%;
     width: 25%;
     margin-left: auto;
     margin-right: auto;
+ 
+    
 }
 h1,h2 {
 color: blue;
@@ -86,8 +94,8 @@ a {
    /* color: red; */
 }
 .bottom-text{
-    color: greenyellow;
-    width: 75%;
+    color: rgb(156, 214, 62);
+   // width: 75%;
 }
 .child2-panel {
     float: left;
