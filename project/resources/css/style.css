@@ -5,9 +5,9 @@
 }
 html{
     background-color: aqua;
-    color: seashell;
+    color: black;
     font-family: 'Lato', 'Arial', 'sans.serif';
-    font-size: 20px;
+    font-size: 30px;
     text-rendering: optimizeLegibility;
 }
 .row{
@@ -68,6 +68,33 @@ h1 {
     border: 1px solid red;
 }
 .btn-ghost:hover,
-.btn-ghost:active{
+.btn-ghost:active {
     background-color: black;
+}
+.logo {
+    height: 100px; 
+    width: auto;
+    float: left
+}
+.main-nav {
+    margin-top: 50px;
+    float: right;
+    list-style: none;
+    }
+.main-nav li {
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 5px;    
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: coral;
+    text-decoration: none;
+    font-size: 60%;
+}
+
+.main-nav li a:hover,
+.main-nav li:active {
+    border-bottom: 2px solid black;
+
 }
