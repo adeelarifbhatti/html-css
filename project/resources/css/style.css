@@ -32,6 +32,11 @@ h1 {
     letter-spacing: 1px;
     word-spacing: 30px;
 }
+h2 {
+    text-align: center;
+        margin-bottom: 20px;
+}
+
 .div-one {
     position: absolute;
     width: 1140px;
@@ -97,4 +102,25 @@ h1 {
 .main-nav li:active {
     border-bottom: 2px solid black;
 
+}
+section {
+padding: 10px;
+margin: auto;
+}
+
+h2:after {
+    display:block;
+    height: 10px;
+    background-color: black;
+    content: "";
+    width:100%;
+    margin-top: 10px;
+}
+.long-copy {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px    
+}
+.span-box {
+    padding:2%
 }
