@@ -124,3 +124,8 @@ h2:after {
 .span-box {
     padding:2%
 }
+.span-box p {
+    color: blue;
+    background-color:tomato;
+    
+}
