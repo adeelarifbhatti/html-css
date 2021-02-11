@@ -22,6 +22,9 @@ header {
     background-size: cover;
     height: 60vh;
 }
+.startagain {
+    margin-bottom: 10px;
+}
 h1 {
     margin-top: 0;
     margin-bottom: 20px;
@@ -44,7 +47,11 @@ h2 {
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.btn:link,
+.customBtn {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+/* .btn:link,
 .btn:visited{
     display: inline-block;
     padding: 10px 30px;
@@ -75,7 +82,7 @@ h2 {
 .btn-ghost:hover,
 .btn-ghost:active {
     background-color: black;
-}
+} */
 .logo {
     height: 100px; 
     width: auto;
