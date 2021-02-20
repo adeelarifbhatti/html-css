@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 10px;
+}
+.header {
+    height: 75vh;
+    background-image: linear-gradient(to right bottom, rgba(93, 127, 189, 0.459), rgba(86, 88, 233, 0.404)), url(img/banner.jpg); 
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+} 
+.logo-box{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.logo {
+    height: 30px;
+}
+.main-heading {
+    color: white;
+    text-transform: uppercase;
+}
+
+.main-heading-style {
+    display: block;
+    font-size: 60px;
+    letter-spacing: 10px;
+}
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
