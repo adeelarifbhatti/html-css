@@ -25,21 +25,85 @@ body{
     left: 10px;
 }
 .logo {
-    height: 30px;
+    height: 90px;
 }
 .main-heading {
     color: white;
     text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 60px;
 }
 
-.main-heading-style {
+.main-heading-primary {
     display: block;
     font-size: 60px;
     letter-spacing: 10px;
+    animation-name: moveFromLeft;
+    animation-duration: 1s;
+    /*
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    */    
+}
+.main-heading-sub {
+    display: block;
+    font-size: 20px;
+    letter-spacing: 10px;
+    animation-name: moveFromRight;
+    animation-duration: 1s;
 }
 .text-box {
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
+@keyframes moveFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    90% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    90% {
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 60px;
+    transition: all .3s;
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+}
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 4);
+}
+.btn-white {
+    background-color: white;
+    color: #777;
+}
+
+
