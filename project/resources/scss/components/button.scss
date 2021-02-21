@@ -1,0 +1,51 @@
+.btn {
+    &:link,
+    &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .3s;
+    position: relative;
+    }
+
+    &:hover {
+        transform: translateY(-3rem);
+        box-shadow: 0 .2rem .9rem rgba($color-black, .9);
+            &::after {
+                transform: scaleY(1.1) scaleX(1.1);                
+               // opacity: 0;            
+            }
+        }
+    &:active {
+        transform: translateY(1rem);
+        box-shadow: 0 .4rem .1rem rgba($color-black, 4);
+        }
+    &-white {
+        background-color:$color-white;
+        color: #777;
+        &::after {
+            background-color:$color-white;
+        }
+    }
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .01s;
+    }
+
+}
+.animated_button {
+    animation-name: moveUpbutton;
+    animation-duration: .9s;
+    animation-delay: .4s;
+    animation-fill-mode: backwards;
+}

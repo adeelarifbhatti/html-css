@@ -1,3 +1,31 @@
+@keyframes moveFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  90% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  90% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveUpbutton {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 *,
 *::after,
 *::before {
@@ -9,27 +37,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 1.7;
-  color: #777;
-  padding: 2rem;
   box-sizing: border-box; }
-
-.header {
-  height: 75vh;
-  background-image: linear-gradient(to right bottom, rgba(93, 127, 189, 0.459), rgba(86, 88, 233, 0.404)), url(img/banner.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); }
-  .header__logo-box {
-    position: absolute;
-    top: .1rem;
-    left: .1rem; }
-  .header__logo {
-    height: 8.5rem; }
 
 .main-heading {
   color: #fff;
@@ -60,25 +68,14 @@ body {
   left: 50%;
   transform: translate(-50%, -50%); }
 
-@keyframes moveFromLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
-  90% {
-    transform: translateX(1rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes moveFromRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  90% {
-    transform: translateX(-1rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777;
+  padding: 2rem;
+  box-sizing: border-box; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -123,10 +120,16 @@ body {
   animation-delay: .4s;
   animation-fill-mode: backwards; }
 
-@keyframes moveUpbutton {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
+.header {
+  height: 75vh;
+  background-image: linear-gradient(to right bottom, rgba(93, 127, 189, 0.459), rgba(86, 88, 233, 0.404)), url(img/banner.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); }
+  .header__logo-box {
+    position: absolute;
+    top: .1rem;
+    left: .1rem; }
+  .header__logo {
+    height: 8.5rem; }
