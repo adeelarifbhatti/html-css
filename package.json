@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "serve project/"
+    "start:dev": "serve project/",
+    "compile:sass": "node-sass project/resources/scss/scss.scss project/resources/css/style2.css"
   },
   "repository": {
     "type": "git",
