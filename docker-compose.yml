@@ -1,0 +1,11 @@
+version: "2.0"
+services:
+
+ node-css-html:
+  build:
+   context: .
+   dockerfile: Dockerfile
+  volumes:
+   - ./:/usr/app/src
+  ports:
+   - "80:5000"
