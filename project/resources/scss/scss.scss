@@ -1,0 +1,157 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: #777;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+.header {
+    height: 75vh;
+    background-image: linear-gradient(to right bottom, rgba(93, 127, 189, 0.459), rgba(86, 88, 233, 0.404)), url(img/banner.jpg); 
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+} 
+.logo-box{
+    position: absolute;
+    top: .1rem;
+    left: .1rem;
+}
+.logo {
+    height: 8.5rem;
+}
+.main-heading {
+    color: white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+}
+
+.main-heading-primary {
+    display: block;
+    font-size: 6rem;
+    letter-spacing: 6rem;
+    animation-name: moveFromLeft;
+    animation-duration: 1s;
+    /*
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    */    
+}
+.main-heading-sub {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    animation-name: moveFromRight;
+    animation-duration: 1s;
+}
+.text-box {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@keyframes moveFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    90% {
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    90% {
+        transform: translateX(-1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.btn:link,
+ .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .3s;
+    position: relative;
+
+}
+.btn:hover {
+    transform: translateY(-3rem);
+    box-shadow: 0 .2rem .3rem rgba(0, 0, 0, .5);
+
+}
+.btn:active {
+    transform: translateY(1rem);
+    box-shadow: 0 .4rem .1rem rgba(0, 0, 0, 4);
+}
+.btn-white {
+    background-color: white;
+    color: #777;
+}
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .01s;
+}
+.btn-white::after {
+    background-color: white;
+}
+.btn:hover::after {
+    transform: scaleY(1.02) scaleX(1.05);
+    /*
+    opacity: 0;
+  */
+}
+.animated_button {
+    animation-name: moveUpbutton;
+    animation-duration: .9s;
+    animation-delay: .4s;
+    animation-fill-mode: backwards;
+}
+@keyframes moveUpbutton {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
