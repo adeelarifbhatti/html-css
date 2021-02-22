@@ -126,7 +126,7 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); }
+  clip-path: polygon(0% 0%, 100% 0, 100% 65vh, 0% 100%); }
   .header__logo-box {
     position: absolute;
     top: .1rem;
@@ -165,3 +165,8 @@ body {
     width: calc(((100% - 11*  6rem) /12)); }
   .row .col-3-of-12 {
     width: calc(3*((100% - 11*  6rem) /12) + 2 * 6rem); }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -10vh; }
