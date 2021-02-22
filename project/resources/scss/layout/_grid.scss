@@ -9,7 +9,7 @@
 
     [class^="col-"] {
 
-        background-color: red;
+        background-color: blue;
         float: left;
         &:not(:last-child){
             margin-right: $gutter-horizontal;
@@ -30,6 +30,22 @@
     }
     .col-2-of-3 {
         width: calc(2*((100% - 2*  #{$gutter-horizontal}) /3) + #{$gutter-horizontal});
+
+    }
+    .col-1-of-5 {
+        width: calc((100% - 4*  #{$gutter-horizontal}) /5);
+
+    }
+    .col-3-of-5 {
+        width: calc(3*((100% - 4*  #{$gutter-horizontal}) /5) + 2*#{$gutter-horizontal}) ;
+
+    }
+    .col-1-of-12 {
+        width: calc(((100% - 11*  #{$gutter-horizontal}) /12));
+
+    }
+    .col-3-of-12 {
+        width: calc(3*((100% - 11*  #{$gutter-horizontal}) /12) + 2 * #{$gutter-horizontal});
 
     }
 

@@ -145,7 +145,7 @@ body {
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    background-color: red;
+    background-color: blue;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
@@ -157,3 +157,11 @@ body {
     width: calc((100% - 2* 6rem) /3); }
   .row .col-2-of-3 {
     width: calc(2*((100% - 2*  6rem) /3) + 6rem); }
+  .row .col-1-of-5 {
+    width: calc((100% - 4*  6rem) /5); }
+  .row .col-3-of-5 {
+    width: calc(3*((100% - 4*  6rem) /5) + 2*6rem); }
+  .row .col-1-of-12 {
+    width: calc(((100% - 11*  6rem) /12)); }
+  .row .col-3-of-12 {
+    width: calc(3*((100% - 11*  6rem) /12) + 2 * 6rem); }
