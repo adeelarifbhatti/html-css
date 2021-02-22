@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "serve project/",
-    "compile:sass": "node-sass project/resources/scss/scss.scss project/resources/css/style2.css"
+    "compile:sass": "node-sass project/resources/scss/scss.scss project/resources/css/style2.css -w"
   },
   "repository": {
     "type": "git",
