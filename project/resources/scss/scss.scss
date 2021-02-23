@@ -1,6 +1,6 @@
-@import "abstracts/_function";
-@import "abstracts/_mixins";
-@import "abstracts/_variables";
+@import "abstracts/function";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
@@ -9,3 +9,4 @@
 @import "layout/header";
 @import "layout/grid";
 @import "pages/home";
+@import "components/composition"

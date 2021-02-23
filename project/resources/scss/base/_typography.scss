@@ -32,7 +32,7 @@
 body{
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: $default-font-size;
     line-height: 1.7;
     color: #777;
     padding: 2rem;
@@ -47,5 +47,22 @@ body{
     background-image: linear-gradient(to left,
     $color-primary-darker,$color-primary-light);
     color: transparent;    
- 
+    letter-spacing: .2rem;
+    transition: all .001s; 
+    &:hover {
+        transform: skewY(2deg) skewX(20deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}
+.heading-tertiary{
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: 1.6rem;
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
 }
