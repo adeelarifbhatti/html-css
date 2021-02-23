@@ -22,8 +22,6 @@
         animation-duration: 1s;
     }
 }
-
-
 .text-box {
     text-align: center;
     position: absolute;
@@ -39,4 +37,15 @@ body{
     color: #777;
     padding: 2rem;
     box-sizing: border-box;
+}
+.heading-secondary{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to left,
+    $color-primary-darker,$color-primary-light);
+    color: transparent;    
+ 
 }
