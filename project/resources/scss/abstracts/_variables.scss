@@ -1,15 +1,21 @@
 // colours
 $color-primary: rgb(93, 127, 189);
-$color-primary-light: rgb(100, 102, 197);
 $color-white: #fff;
 $color-black: #000;
 $color-white-grey-1: #bbdaf3;
 $color-primary-darker: rgb(32, 34, 148);
+$color-primary-light: rgb(100, 102, 197);
+
+$color-secondary-darker: rgb(67, 233, 103);
+$color-secondary-light: rgb(150, 223, 153);
+
+$color-tertiary-darker: rgb(231, 197, 44);
+$color-tertiary-light: rgb(216, 209, 147);
 
 // grid
 $grid-width: 114rem;
 $gutter-vertical: 3rem;
-$gutter-horizontal: 5rem;
+$gutter-horizontal: 8rem;
 
 
 // default font size

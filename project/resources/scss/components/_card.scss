@@ -1,0 +1,79 @@
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 50rem;
+    &__side {
+        // height broken, so thats why we added again.
+        height: 50rem;
+        transition: all .5s;
+        color: blue;
+        position: absolute;  
+        top:0;
+        left:0;
+        width: 100%;  
+        backface-visibility: hidden;
+        border-radius: 5px;
+        box-shadow: 1rem 1.5rem 1rem rgba($color-black,.15);
+
+        &--front {
+            background-color: $color-primary;
+        }
+        &--back {
+            background-color: $color-primary-darker;
+            transform: rotateY(180deg);
+            &--1 {
+                background-image: linear-gradient(to right bottom, $color-primary-darker
+                ,$color-primary-light );
+
+            }
+            &--2 {
+                background-image: linear-gradient(to right bottom, $color-secondary-darker
+                ,$color-secondary-light );
+                
+            }
+            &--3 {
+                background-image: linear-gradient(to right bottom, $color-tertiary-darker
+                ,$color-tertiary-light );
+            }
+
+        }
+    }
+    &:hover &__side--front {
+        transform: rotateY(180deg);
+    }
+    &:hover &__side--back {
+        transform: rotateY(0deg);
+    }
+}
+//##############################################################
+.card-csection {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    &__side {
+        height: 20rem;
+        transition: all .5s;
+        color: blue;
+        position: absolute;
+
+    
+        &--front {
+            background-color: $color-primary;
+            top: 0rem;
+            left: 3.2rem;
+        }
+        &--back {
+            background-color: $color-primary;
+            transform: rotateY(180deg);
+        }
+    }
+    &:hover &__side--front {
+        transform: rotateY(180deg);
+        background-color: $color-primary-darker;
+    }
+    &:hover &__side--back {
+        background-color: $color-primary-darker;
+        transform: rotateY(0deg);
+    }
+}
