@@ -194,10 +194,9 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #bbdaf3;
   margin: 0 auto; }
   .row:not(:last-child) {
-    margin-bottom: 8rem; }
+    margin-bottom: 3rem; }
   .row::after {
     content: "";
     display: table;
@@ -206,29 +205,37 @@ body {
     background-color: #bbdaf3;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
+      margin-right: 5rem; }
   .row .col-1-of-2 {
-    width: calc((100% - 6rem) /2); }
+    width: calc((100% - 5rem) /2); }
   .row .col-1-of-4 {
-    width: calc((100% - 3 * 6rem) /4); }
+    width: calc((100% - 3 * 5rem) /4); }
   .row .col-1-of-3 {
-    width: calc((100% - 2* 6rem) /3); }
+    width: calc((100% - 2* 5rem) /3); }
   .row .col-2-of-3 {
-    width: calc(2*((100% - 2*  6rem) /3) + 6rem); }
+    width: calc(2*((100% - 2*  5rem) /3) + 5rem); }
   .row .col-1-of-5 {
-    width: calc((100% - 4*  6rem) /5); }
+    width: calc((100% - 4*  5rem) /5); }
   .row .col-3-of-5 {
-    width: calc(3*((100% - 4*  6rem) /5) + 2*6rem); }
+    width: calc(3*((100% - 4*  5rem) /5) + 2*5rem); }
   .row .col-1-of-12 {
-    width: calc(((100% - 11*  6rem) /12)); }
+    width: calc(((100% - 11*  5rem) /12)); }
   .row .col-3-of-12 {
-    width: calc(3*((100% - 11*  6rem) /12) + 2 * 6rem); }
+    width: calc(3*((100% - 11*  5rem) /12) + 2 * 5rem); }
 
 .section-about {
   background-color: #bbdaf3;
   padding: 25rem 0;
   margin-top: -8vh;
-  clip-path: polygon(0% 10%, 100% 0, 100% 100%, 0% 100%); }
+  clip-path: polygon(0% 10%, 100% 0, 100% 100%, 0% 92%); }
+
+.section-features {
+  padding: 12rem 0;
+  background-image: linear-gradient(to right bottom, rgba(93, 127, 189, 0.459), rgba(100, 102, 197, 0.404)), url(img/banner.jpg);
+  background-size: cover;
+  transform: skewY(4deg); }
+  .section-features > * {
+    transform: skewY(-4deg); }
 
 .composition {
   position: relative; }
@@ -256,3 +263,21 @@ body {
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 0px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+  transition: transform .2s; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: .3rem;
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to left, #202294, #6466c5);
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.02); }
