@@ -1,0 +1,30 @@
+.info {
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 .3rem 1rem rgba($color-black, .1);
+    border-radius: 2px;
+    padding-left: 2rem;
+    padding-bottom: 5rem;
+    transform: skewX(12deg);
+ /* becuase __shape already have a transform
+   & > * {
+        transform: skewX(-12deg);
+    }*/
+    &__shape {
+        width: 15rem;
+        height: 15rem;
+        float: left;
+       //-webkit-shape-outside: circle(50% at 50% 50%); for firefox is not supported
+        shape-outside: circle(50% at 50% 50%);
+      //  -webkit-clip-path:  circle(50% at 50% 50%);for firefox is not supported
+        clip-path: circle( 50% at 50% 50%);
+        transform: translateX(-1rem) skewX(-12deg);
+    }
+    &__image {
+        height: 100%;
+
+    }
+    &__text {
+        transform: skewX(-12deg);
+    }
+}

@@ -241,6 +241,33 @@ body {
   background-color: #bbdaf3;
   padding: 10rem 0 15rem 0; }
 
+.section-info {
+  padding: 10rem 0;
+  background-color: #bbdaf3; }
+
+.section-form {
+  padding: 1rem 0;
+  background-image: linear-gradient(to right bottom, #202294, #6466c5); }
+
+.form-part {
+  background-image: linear-gradient(84deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.5) 50%, transparent 70%), url(img/banner.jpg);
+  background-size: 100%;
+  height: 50rem;
+  border-radius: 2rem;
+  box-shadow: 0 0.5rem 1rem black; }
+  .form-part__form {
+    width: 50%;
+    height: 100%;
+    position: relative; }
+    .form-part__form-1 {
+      position: absolute;
+      top: 5rem;
+      left: 5rem; }
+    .form-part__form-2 {
+      position: absolute;
+      top: 10rem;
+      left: 5rem; }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -340,3 +367,27 @@ body {
   .card-csection:hover .card-csection__side--back {
     background-color: #202294;
     transform: rotateY(0deg); }
+
+.info {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding-left: 2rem;
+  padding-bottom: 5rem;
+  transform: skewX(12deg);
+  /* becuase __shape already have a transform
+   & > * {
+        transform: skewX(-12deg);
+    }*/ }
+  .info__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-1rem) skewX(-12deg); }
+  .info__image {
+    height: 100%; }
+  .info__text {
+    transform: skewX(-12deg); }
