@@ -47,18 +47,6 @@
     &__form {
         width: 50%;
        // background-color: red;
-        height: 100%;
-        position: relative;
-        &-1 {
-            position: absolute;
-            top: 5rem;
-            left: 5rem;
-        }
-        &-2 {
-            position: absolute;
-            top: 10rem;
-            left: 5rem;
-        }
+        padding: 6rem;        
     }
-
 }
