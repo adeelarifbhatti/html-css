@@ -1,16 +1,18 @@
 // colours
-$color-primary: rgb(93, 127, 189);
+$color-primary: rgb(153, 181, 233);
 $color-white: #fff;
 $color-black: #000;
 $color-white-grey-1: #bbdaf3;
-$color-primary-darker: rgb(32, 34, 148);
-$color-primary-light: rgb(100, 102, 197);
+$color-primary-darker: rgba(123, 124, 194, 0.664);
+$color-primary-light: rgb(104, 187, 235);
 
 $color-secondary-darker: rgb(67, 233, 103);
 $color-secondary-light: rgb(150, 223, 153);
 
 $color-tertiary-darker: rgb(231, 197, 44);
 $color-tertiary-light: rgb(216, 209, 147);
+
+$color-for-footer: rgb(140, 192, 240);
 
 // grid
 $grid-width: 114rem;

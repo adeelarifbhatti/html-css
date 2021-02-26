@@ -7,7 +7,7 @@
 
     [class^="col-"] {
 
-        background-color: $color-white-grey-1;
+     //   background-color: $color-primary-light;
         float: left;
         &:not(:last-child){
             margin-right: $gutter-horizontal;
