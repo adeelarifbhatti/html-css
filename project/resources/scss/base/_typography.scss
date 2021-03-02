@@ -9,6 +9,10 @@
         letter-spacing: 6rem;
         animation-name: moveFromLeft;
         animation-duration: 1s;
+        @include respond(tab-port) {
+            letter-spacing: 2rem;
+            font-family: 3rem;
+        } 
         /*
         animation-delay: 2s;
         animation-iteration-count: 2;
@@ -20,6 +24,9 @@
         letter-spacing: 1rem;
         animation-name: moveFromRight;
         animation-duration: 1s;
+        @include respond(tab-port) {
+           letter-spacing: .3rem;
+        } 
     }
 }
 .text-box {
@@ -35,7 +42,6 @@ body{
     font-size: $default-font-size;
     line-height: 1.7;
     color: #777;
-    padding: 2rem;
     box-sizing: border-box;
 }
 .heading-secondary{
@@ -49,6 +55,12 @@ body{
     color: transparent;    
     letter-spacing: .2rem;
     transition: all .001s; 
+    @include respond(tab-port) {
+        font-size: 2rem;
+    } 
+    @include respond(phone) {
+        font-size: 2rem;
+    } 
     &:hover {
         transform: skewY(2deg) skewX(20deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);

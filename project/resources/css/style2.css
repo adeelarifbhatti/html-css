@@ -1,3 +1,15 @@
+/*
+0 to 600px >> phone
+600 to 900 >> tablet portrait
+900 to 1200 Tablet landscape
+1200 tp 1800 is where our normal style apply
+1800px + big screen
+*/
+/* including all queries in one method
+@mixin respond-phone {
+    @media (max-width: 600px) { @content };
+}
+*/
 @keyframes moveFromLeft {
   0% {
     opacity: 0;
@@ -34,10 +46,31 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  /*   @include respond-phone {
+        font-size: 50%;
+    }
+    */
+  /* @include respond(phone) { //1rem = 8px, 8/18= 50%
+        font-size: 50%;
+    }   same as below
+    */ }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.5em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 2rem; }
+  @media (max-width: 56.5em) {
+    body {
+      padding: 0rem; } }
 
 .main-heading {
   color: #fff;
@@ -54,12 +87,19 @@ body {
         animation-delay: 2s;
         animation-iteration-count: 2;
         */ }
+    @media (max-width: 56.5em) {
+      .main-heading-primary {
+        letter-spacing: 2rem;
+        font-family: 3rem; } }
   .main-heading-sub {
     display: block;
     font-size: 2rem;
     letter-spacing: 1rem;
     animation-name: moveFromRight;
     animation-duration: 1s; }
+    @media (max-width: 56.5em) {
+      .main-heading-sub {
+        letter-spacing: .3rem; } }
 
 .text-box {
   text-align: center;
@@ -74,7 +114,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: #777;
-  padding: 2rem;
   box-sizing: border-box; }
 
 .heading-secondary {
@@ -87,6 +126,12 @@ body {
   color: transparent;
   letter-spacing: .2rem;
   transition: all .001s; }
+  @media (max-width: 56.5em) {
+    .heading-secondary {
+      font-size: 2rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(20deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -207,6 +252,11 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 3rem; }
+    @media (max-width: 56.5em) {
+      .row:not(:last-child) {
+        margin-bottom: 1rem; } }
   .row::after {
     content: "";
     display: table;
@@ -215,6 +265,12 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 8rem; }
+      @media (max-width: 56.5em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-bottom: 1rem; } }
+    @media (max-width: 56.5em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 8rem) /2); }
   .row .col-1-of-4 {
