@@ -1,0 +1,93 @@
+.popup {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba($color-black, .5);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:3000;
+    opacity: 0;
+    visibility:hidden;
+    transition: all .3s;
+
+    
+    &__content {
+        position: absolute;
+        top:50%;
+        left:50%;
+        // two transformed togather
+      //  transform: translate(-50%,-50%);
+        width: 75%;
+        background-color: white;
+        box-shadow: 0 2rem 4rem rgba($color-black,.2);
+        border-radius: 3px;
+        display: table;
+        overflow: hidden;
+        opacity: 0;
+        transform: translate(-50%,-50%) scale(.5);
+        transition: all .4s;
+
+
+    }
+    &__left {
+        width: 35%;
+        // instead of float we use table (parent) and table-cell in child
+        //float: left;
+        display: table-cell;
+        vertical-align: middle;
+
+    }
+    &__right{
+        width: 65%;
+        // instead of float we use table (parent) and table-cell in child
+        //float: left;
+        display:table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
+
+    }
+    &__img {
+        display: block;
+        width: 100%;
+
+    }
+    &__text {
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+        column-count: 2;
+        column-gap: 4rem; // 1em is 14px
+        column-rule: 1px solid $color-white-grey-1;
+        // hyphens might not work so lets give it -webkit
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+    }
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%,-50%) scale(1);
+    }
+    &__close {
+        &:link,
+        &:visited {
+            color: $color-primary-light;
+            position: absolute;
+            top:2.5rem;
+            right: 2.5rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+            line-height: 1;
+
+        }
+        &:hover{
+            color: $color-primary;
+        }
+    }
+
+
+}

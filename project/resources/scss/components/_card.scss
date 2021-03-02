@@ -3,6 +3,7 @@
     -moz-perspective: 150rem;
     position: relative;
     height: 50rem;
+
     &__side {
         // height broken, so thats why we added again.
         height: 50rem;
@@ -36,14 +37,21 @@
                 background-image: linear-gradient(to right bottom, $color-tertiary-darker
                 ,$color-tertiary-light );
             }
-
-        }
+        }    
     }
     &:hover &__side--front {
         transform: rotateY(180deg);
     }
     &:hover &__side--back {
         transform: rotateY(0deg);
+    }
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
     }
 }
 //##############################################################
@@ -76,4 +84,5 @@
         background-color: $color-primary-darker;
         transform: rotateY(0deg);
     }
+
 }
