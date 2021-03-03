@@ -17,6 +17,14 @@
         //cubic-bezier.com
         transition: transform .8s cubic-bezier(0.86,0,0.07,1);
        // transform: scale(80);
+       @include respond(tab-port) {
+            top:2rem;
+            right: 3.0rem;
+        } 
+        @include respond(phone) {
+            top:1rem;
+            right: 2rem;
+        } 
     }
     &__button {
         height: 7.4rem;
@@ -24,11 +32,19 @@
         border-radius: 50%;
         background-color: white;
         position: fixed;
-        top: 6.0rem;
-        right: 6.0rem;
+        top: 5.0rem;
+        right: 5.0rem;
         z-index: 2000;
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
         cursor: pointer;
+        @include respond(tab-port) {
+            top:2rem;
+            right: 3.0rem;
+        } 
+        @include respond(phone) {
+            top:1rem;
+            right: 2rem;
+        } 
     }
     &__list {
         position: absolute;
