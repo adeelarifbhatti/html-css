@@ -9,18 +9,38 @@
         position: absolute;
         transition: .2s;
         outline-offset: 2rem;
+        @include respond(tab-port) {
+            float: left;
+            position: relative;
+            width: 33.3333%;
+            box-shadow: 0 .5rem 1rem rgba($color-black, .4);
+
+
+        }
 
         &--p1 {
             left: 0;
             top: -2rem;
+            @include respond(tab-port) {
+                top: 0;
+                right: 0;
+            }
         }
         &--p2 {
             right: 10%;
             top: 5rem;
+            @include respond(tab-port) {
+                top: -1rem;
+                right: 0;
+            }
         }        
         &--p3 {
             left: 15%;
             top: 13rem;
+            @include respond(tab-port) {
+                top: 1rem;
+                left: 0;
+            }
         }
         &:hover {
             outline: 1.5rem solid $color-primary;

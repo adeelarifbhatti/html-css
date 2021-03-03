@@ -22,11 +22,20 @@
     & > * {
         transform: skewY(-4deg);
     }
+    @include respond(tab-port) {
+        padding: 3rem 0;
+        
+    }
 
 } 
 .section-course {
     background-color:$color-white-grey-1;
+    clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 100%);
     padding: 10rem 0 15rem 0;
+    @include respond(tab-port) {
+        padding: 4rem 0 1rem 0;
+        clip-path: polygon(0% 0%, 100% 3%, 100% 100%, 0% 100%);
+    }
 }
 .section-info {
     padding: 10rem 0;
