@@ -257,6 +257,9 @@ body {
     @media (max-width: 56.5em) {
       .row:not(:last-child) {
         margin-bottom: 1rem; } }
+  @media (max-width: 56.5em) {
+    .row {
+      max-width: 50rem; } }
   .row::after {
     content: "";
     display: table;
