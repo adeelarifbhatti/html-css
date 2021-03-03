@@ -53,8 +53,39 @@
         width: 90%;
         text-align: center;
     }
+    @include respond(tab-port) {
+        height: auto;
+    
+        &__side {
+            // height broken, so thats why we added again.
+            height: auto;
+            transition: all .5s;
+            color: blue;
+            position: relative ;  
+            border-radius: 5px;
+
+    
+            &--front {
+                background-color: $color-primary;
+            }
+            &--back {
+                background-color: $color-primary-darker;
+                transform: rotateY(0deg);
+            }    
+        }
+        &:hover &__side--front {
+            transform: rotateY(0deg);
+        }
+        &:hover &__side--back {
+            transform: rotateY(0deg);
+        }
+        &__cta {
+            position: relative;
+            width: 100%;
+        }        
+    }
 }
-//##############################################################
+//#################################################following is not used #############
 .card-csection {
     perspective: 150rem;
     -moz-perspective: 150rem;

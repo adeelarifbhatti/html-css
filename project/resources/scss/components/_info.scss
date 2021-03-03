@@ -10,6 +10,15 @@
    & > * {
         transform: skewX(-12deg);
     }*/
+    @include respond(tab-port) {
+        width: 100%;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+
+    }
+    @include respond(phone) {
+        transform: translateX(-1rem) skewX(0);
+    }
     &__shape {
         width: 15rem;
         height: 15rem;
@@ -19,6 +28,9 @@
       //  -webkit-clip-path:  circle(50% at 50% 50%);for firefox is not supported
         clip-path: circle( 50% at 50% 50%);
         transform: translateX(-1rem) skewX(-12deg);
+        @include respond(phone) {
+            transform: translateX(-1rem) skewX(0);
+        }
     }
     &__image {
         height: 100%;
@@ -26,5 +38,8 @@
     }
     &__text {
         transform: skewX(-12deg);
+        @include respond(phone) {
+            transform: translateX(0rem) skewX(0);
+        }
     }
 }
